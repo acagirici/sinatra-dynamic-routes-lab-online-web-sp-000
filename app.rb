@@ -7,9 +7,18 @@ class App < Sinatra::Base
     reverse.to_s
   end
   
-  get '/say/:number/:phrase'
+  get '/say/:number/:phrase' do
+    @numbers = params[:number]
+    @phrase = params[:phrase]
+    phrase_multp = @number.to_i * @phrase
+    phrase_multp
+  end
   
-  get '/say/:word1/:word2/:word3/:word4/:word5'
+  get '/say/:word1/:word2/:word3/:word4/:word5' do
   
+  end
   
+  get '/:operation/:number1/:number2' do
+  
+  end
 end
