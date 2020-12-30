@@ -7,5 +7,7 @@ class App < Sinatra::Base
     reverse.to_s
   end
   
-  get ""
+  get '/say/:number/:phrase'
+  
+  
 end
